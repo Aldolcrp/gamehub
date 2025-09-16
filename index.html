@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub - Lobby</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main-lobby" class="lobby-container active">
+        <div class="player-account">
+            <label for="playerNameInput">Player:</label>
+            <input type="text" id="playerNameInput" placeholder="Masukkan Nama..." maxlength="12">
+        </div>
+        
+        <div class="main-content">
+            <h1 class="game-title">GAMEHUB</h1>
+            <button id="startButton" class="btn-main">MULAI</button>
+        </div>
+    </div>
+
+    <div id="game-lobby" class="lobby-container">
+        <div class="player-display">
+            <span id="playerNameDisplay">Player 1</span>
+        </div>
+
+        <h2>PILIH GAME</h2>
+        <div class="game-grid">
+            <a href="games/cacing/index.html" class="game-card">
+                <img src="https://via.placeholder.com/150/2ecc71/ffffff?text=CACING" alt="Game Cacing">
+                <span>Cacing.io</span>
+            </a>
+            <a href="games/tekateki/index.html" class="game-card">
+                <img src="https://via.placeholder.com/150/3498db/ffffff?text=TEKA-TEKI" alt="Game Teka-Teki">
+                <span>Teka Teki</span>
+            </a>
+            
+            <div class="game-card disabled">
+                <img src="https://via.placeholder.com/150/e74c3c/ffffff?text=LUDO" alt="Game Ludo">
+                <span>Ludo (Segera)</span>
+            </div>
+             <div class="game-card disabled">
+                <img src="https://via.placeholder.com/150/9b59b6/ffffff?text=CATUR" alt="Game Catur">
+                <span>Catur (Segera)</span>
+            </div>
+             <div class="game-card disabled">
+                <img src="https://via.placeholder.com/150/f1c40f/ffffff?text=?" alt="Game Misteri">
+                <span>Game 5 (Segera)</span>
+            </div>
+             <div class="game-card disabled">
+                <img src="https://via.placeholder.com/150/e67e22/ffffff?text=?" alt="Game Misteri">
+                <span>Game 6 (Segera)</span>
+            </div>
+        </div>
+        <button id="backButton" class="btn-secondary">Kembali</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
